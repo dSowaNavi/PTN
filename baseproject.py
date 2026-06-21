@@ -23,7 +23,3 @@ class BaseProject(ABC):
     @abstractmethod
     def generate_charts(self):
         pass
-
-    @abstractmethod
-    def generate_reports(self):
-        pass
