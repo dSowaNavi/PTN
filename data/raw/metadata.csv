@@ -1,0 +1,10 @@
+metric,value,description
+source_file,run history(1).txt,Original text file used to generate CSV files
+run_count,77,Number of RunHistory objects parsed
+floor_count,2088,Number of RunFloor objects parsed
+deck_card_rows,2165,Number of card rows extracted from final decks
+relic_rows,722,Number of relic rows extracted from final relic lists
+card_offer_rows,3995,Number of card offer rows extracted from floor rewards/shops/events
+card_pick_rows,939,Number of card picks extracted from floors
+potions_used_rows,473,Number of potion-use events extracted from floors
+potions_gained_rows,575,Number of potion-gain events extracted from floors
