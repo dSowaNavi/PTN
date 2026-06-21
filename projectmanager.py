@@ -2,7 +2,6 @@ import pandas as pd
 from analizer import Analyzer
 from baseproject import BaseProject
 from dataloader import DataLoader
-from reportwriter import ReportWriter
 from visualizer import Visualizer
 
 class ProjectManager(BaseProject):
@@ -30,11 +29,6 @@ class ProjectManager(BaseProject):
 
     def generate_charts(self):
         self.visualizer.generate_all(self.results)
-
-
-    def generate_reports(self):
-        self.report_writer.save_reports(self.results)
-
 
     def save_processed_tables(self):
         self.processed_dir.mkdir(parents=True, exist_ok=True)
