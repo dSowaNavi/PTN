@@ -37,7 +37,3 @@ class ProjectManager(BaseProject):
         for name, value in self.results.items():
             if isinstance(value, pd.DataFrame):
                 value.to_csv(self.processed_dir / f"{name}.csv", index=False)
-
-
-    def print_summary(self):
-        print(self.report_writer.console_summary(self.results))
